@@ -19,6 +19,7 @@ def main():
     url = f"https://maps.fayetteville-ar.gov/DispatchLogs/json/getIncidents.cshtml/{todaysYear}-{todaysMonth}-{todaysDay}/{todaysYear}-{todaysMonth}-{nextDay}"
 
     #get data, store in dataframe
+    #teest test
     r = requests.get(url)
     data = r.json()
     df = pd.json_normalize(data)
